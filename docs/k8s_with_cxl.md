@@ -6,7 +6,7 @@ To enable Kubernetes with CXL-based memory, we need to verify two things:
 
 ## CXL-based Memory Visibility
 
-For kubernetes, it relys on kubelet to control the containers in a machine. then for the container in kubernetes, there is a CRI(Container Runtime Interface). It can utilize containerd which is the container in docker. So in order to verify the CXL-based memory visibility, we can verify docker's. For verifying it, we only need to see whether the CXL-based memory of the host can be seen in the docker. After we setup the simulation evirtonment and install docker in the simulated machine, we find that it's visibile which means we can see the CXL-based memory in docker just like the host. 
+For kubernetes, it relys on kubelet to control the containers in a machine. then for the container in kubernetes, there is a CRI(Container Runtime Interface). It can utilize containerd which is the container in docker. So in order to verify the CXL-based memory visibility, we can verify docker's. For verifying it, we only need to see whether the CXL-based memory of the host can be seen in the docker. After we setup the simulation environment and install docker in the simulated machine, we find that it's visibile which means we can see the CXL-based memory in docker just like the host. 
 
 ## CXL-based Memory Control
 
